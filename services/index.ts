@@ -3,9 +3,6 @@ import User from "../models"
 import { createUserProps } from "../types"
 
 class UserServices {
-     constructor(){
-
-     }
      async createUser({
           username,
           email,
@@ -33,9 +30,6 @@ class UserServices {
      async getUserById(id:string){
           const user = await User.findById(id)
           return user
-     }
-     async updatePassword(password:string){
-
      }
 }
 
